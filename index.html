@@ -1,181 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phan Nguyen Dang Khoa - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: white;
-            border-radius: 8px;
-        }
-        .section {
-            margin-bottom: 25px;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
-        .education-item, .project-item {
-            margin-bottom: 20px;
-        }
-        .time-range {
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .contact-info {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin: 5px 0;
-        }
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .github-link {
-            display: block;
-            margin-top: 5px;
-            font-size: 0.9em;
-        }
-        ul {
-            padding-left: 20px;
-        }
-    </style>
-</head>
-<body>
-     <div class="header">
-        <div class="profile-container">
-            <h1>Phan Nguyen Dang Khoa</h1>
-            <h3>SOFTWARE ENGINEER</h3>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-column {
+    flex: 40%;
+    background: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-column {
+    flex: 60%;
+    padding: 20px;
+    background: #f39c12;
+    color: black;
+}
+
+.left-column h2 {
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid black;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+    color: black;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+h2 {
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.time-range {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.github-link {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+</style>
+<div class="container">
+    <!-- Cột trái 40% -->
+    <div class="left-column">
+        <img src="avatar.png" alt="Profile Picture" class="profile-pic">
+        <div class="section">
+            <h2>PERSONAL INFORMATION</h2>
+            <div class="contact-info">☎ 0777802410</div>
+            <div class="contact-info">📧 phannguyendangkhoa0915@gmail.com</div>
+            <div class="contact-info">🌐 <a href="https://www.facebook.com/khoaphan030901/">Facebook Profile</a></div>
+            <div class="contact-info">🏠Hong Bang Street, Ward 12, District 6, Ho Chi Minh City</div>
         </div>
-        <!-- Thêm ảnh vào đây -->
-        <img src="avatar.png" alt="Phan Nguyen Dang Khoa's Photo" class="profile-photo">
+      <div class="section">
+            <h2>CERTIFICATES</h2>
+            <ul>
+                <li>12/2024: MOS Certification (Word, PowerPoint, Excel)</li>
+                <li>12/2023: 3rd Prize Daily Life Video Competition</li>
+                <li>10/2021: Top 1 School IT Competition</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>CAREER GOALS</h2>
+            <p>Develop practical skills and knowledge in a professional environment, learn from colleagues and real projects, and continuously update new technologies to meet job requirements in the IT industry. </p>
+        </div>
+        <div class="section">
+            <h2>REFERENCES</h2>
+            <p>MSc. Hen Luong<br>
+            Senior Software Engineer, Endava<br>
+            📧 hen.th.luong@endava.com</p>
+            
+            <p>Dr. Hai Tran<br>
+            Head of IT Program, NIIE<br>
+            📧 tshai@mt.edu.vn</p>
+        </div>
     </div>
-    <!-- EDUCATION SECTION -->
-    <div class="section">
-        <h2>EDUCATION</h2>
-        <div class="education-item">
+
+    <!-- Cột phải 60% -->
+    <div class="right-column">
+        <div class="section">
+            <h2>EDUCATION</h2>
             <p><strong>Information Technology</strong></p>
             <p class="time-range">2021 - 2025</p>
             <p>Nguyen Tat Thanh International Training Institute (NIIE)</p>
             <p>GPA: 3.3/4.0 | Graduation project: "Employee attendance based on timesheets"</p>
         </div>
-    </div>
 
-    <!-- SKILLS SECTION -->
-    <div class="section">
-        <h2>SKILLS</h2>
-        <div class="skills-container">
-            <div>
-                <p><strong>Programming Languages:</strong><br>
-                C#, Python, Java, C++, JavaScript, HTML, PHP</p>
-            </div>
-            <div>
-                <p><strong>Frameworks:</strong><br>
-                ASP.NET Core, RESTFULL API, ReactJS, Angular</p>
-            </div>
-            <div>
-                <p><strong>Project Management:</strong><br>
-                Agile, Scrum, Waterfall</p>
+        <div class="section">
+            <h2>SKILLS</h2>
+            <div class="skills-container">
+                <div>
+                    <p><strong>Programming Languages:</strong><br>
+                        C#, Python, Java, C++, JavaScript, HTML, PHP</p>
+                </div>
+                <div>
+                    <p><strong>Frameworks:</strong><br>
+                        ASP.NET Core, RESTFULL API, ReactJS, Angular</p>
+                </div>
+                <div>
+                    <p><strong>Project Management:</strong><br>
+                        Agile, Scrum, Waterfall</p>
+                </div>
+                <div>
+                    <p><strong>Databases:</strong><br>
+                        MySQL, SQL Server, MongoDB, PostgreSQL</p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- PROJECTS SECTION -->
-    <div class="section">
-        <h2>PROJECTS</h2>
         
-        <div class="project-item">
-            <p><strong>Web Supermarket Management</strong> <span class="time-range">10/2024 - 1/2025</span></p>
+        <div class="section">
+            <h2>PROJECTS</h2>
+            <p> <li><strong>Web Supermarket Management</strong> <span class="time-range">10/2024 - 1/2025</span></li</p>
             <p>ASP.NET MVC, C#, SQL Server, Azure | 4-member team</p>
             <p>Responsibilities: Customer data management, purchase history, live chat integration</p>
             <a href="https://github.com/P1emon/Shop3K1D-EC.git" class="github-link">GitHub Repository</a>
-        </div>
-
-        <div class="project-item">
-            <p><strong>Web Movie Theater Management</strong> <span class="time-range">4/2024 - 7/2024</span></p>
-            <p>ASP.NET MVC, C#, SQL Server | 4-member team</p>
-            <p>Responsibilities: Showtime management, ticket booking system, payment integration</p>
-            <a href="https://github.com/KAHOCCODE/FinalProject_3K1D.git" class="github-link">GitHub Repository</a>
-        </div>
-
-        <div class="project-item">
-            <p><strong>Application Shoes Shop</strong> <span class="time-range">12/2023 - 2/2024</span></p>
-            <p>ASP.NET MVC, C#, SQL Server | Solo project</p>
-            <p>Responsibilities: Full-stack development including admin interface and inventory management</p>
+              
+          <p> <li><strong> WEB MOVIE THEATER MANAGEMENT</strong> <span class="time-range">4/2024-7/2024</span></li</p>
+            <p> ASP.NET MVC model, C#,SQL server| 4-member team</p>
+            <p> 4 person project team, I am in charge of saving customer information data, purchase history, invoice
+ details, live chat (tawk.to) done in 3 months.</p>
             <a href="https://github.com/Pkmax-bit/Shoe-Shop-Winform.git" class="github-link">GitHub Repository</a>
+
+            <p> <li><strong>APPLICATION SHOES SHOP</strong> <span class="time-range">12/2023-2/2024</span></li</p>
+            <p> ASP.NET MVC , C#,SQL server| 4-member team</p>
+            <p>My project took 3 months, I designed from admin interface, customer, purchase, product details, invoice
+ to import-export data connection, warehouse calculation, inventory and shortage.</p>
+            <a href="https://github.com/Pkmax-bit/Shoe-Shop-Winform.git" class="github-link">GitHub Repository</a>
+
+            <p> <li><strong> ENGLISH LEARNING WEBSITE FOR KIDS PROJECT</strong> <span class="time-range">11/2022-1/2023</span></li</p>
+            <p>HTML, CSS, PHP, HOST, MySQL | 4-member team</p>
+            <p> Group project of 3 people, I am in charge of developing login registration, data transmission, scoring
+ algorthm in PHP and designing exercise interface. The project will be completed in 3 months.</p>
+           
         </div>
-
-        <div class="project-item">
-            <p><strong>English Learning Website for Kids</strong> <span class="time-range">11/2022 - 1/2023</span></p>
-            <p>HTML, CSS, PHP, MySQL | 3-member team</p>
-            <p>Responsibilities: User authentication system and scoring algorithm</p>
-            <a href="#" class="github-link">GitHub Repository (Private)</a>
-        </div>
     </div>
-
-    <!-- PERSONAL INFORMATION -->
-    <div class="section">
-        <h2>PERSONAL INFORMATION</h2>
-        <div class="contact-info">☎ 0777802410</div>
-        <div class="contact-info">📧 phannguyendangkhoa0915@gmail.com</div>
-        <div class="contact-info">🌐 <a href="https://www.facebook.com/khoaphan030901/">Facebook Profile</a></div>
-        <div class="contact-info">🏠 Hong Bang Street, Ward 12, District 6, Ho Chi Minh City</div>
-    </div>
-
-    <!-- CERTIFICATES -->
-    <div class="section">
-        <h2>CERTIFICATES</h2>
-        <ul>
-            <li>12/2024: MOS Certification (Word, PowerPoint, Excel)</li>
-            <li>12/2023: 3rd Prize Daily Life Video Competition</li>
-            <li>10/2021: Top 1 School IT Competition</li>
-        </ul>
-    </div>
-
-    <!-- CAREER GOALS -->
-    <div class="section">
-        <h2>CAREER GOALS</h2>
-        <p>Develop practical skills in professional environment, learn from real projects, and continuously update new technologies to meet IT industry requirements.</p>
-    </div>
-
-    <!-- REFERENCES -->
-    <div class="section">
-        <h2>REFERENCES</h2>
-        <p>MSc. Hen Luong<br>
-        Senior Software Engineer, Endava<br>
-        📧 hen.th.luong@endava.com</p>
-        
-        <p>Dr. Hai Tran<br>
-        Head of IT Program, NIIE<br>
-        📧 tshai@mt.edu.vn</p>
-    </div>
-</body>
-</html>
+</div>
